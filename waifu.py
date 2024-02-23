@@ -68,7 +68,7 @@ async def autoprotecc(_, message: Message):
     if not guess:
         return print("Failed to protecc this waifu.")
     guess = guess.replace("Results for", "")
-    res = await message.reply_text(f"/protecc {guess}")
+    res = await message.reply_text(f"/hunt {guess}")
     print(f"Success protecc {guess}")
     time.sleep(DELAY)
     await res.delete()
